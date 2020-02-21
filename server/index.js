@@ -34,4 +34,4 @@ app.listen(SERVER_PORT, () => console.log(`||-----Working on ${SERVER_PORT}----|
 // auth endpoints
 app.post(`/api/register`, authCtrl.register)
 app.post(`/api/login`, authCtrl.login)
-
+app.get(`/api/getUser`, authCtrl.getUser)

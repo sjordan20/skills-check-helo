@@ -21,7 +21,7 @@ const mapStateToProps = reduxState => {
     const { username, profile_pic } = reduxState
     return {
         username,
-        profile_pic
+        profile_pic,
     }
 }
 

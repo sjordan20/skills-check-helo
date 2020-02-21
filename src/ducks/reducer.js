@@ -1,12 +1,18 @@
+import axios from 'axios'
+
 const initialSate = {
-    username: null,
-    id: null,
-    profile_pic: null
+    user: {
+
+        username: null,
+        id: null,
+        profile_pic: null
+    }
 }
 
 const GET_USER = 'GET_USER'
 
-export function getUser(userObj) {
+export function getUser() {
+    let userObj = axios.get(`/api/getUser`).then(res => res.data)
     return {
         type: GET_USER,
         payload: userObj
