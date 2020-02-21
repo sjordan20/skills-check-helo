@@ -14,7 +14,7 @@ function App(props) {
       {props.location.pathname === '/' ||
         props.location.pathname === '/nav' ? (
           <>
-            <Auth />
+
             {routes}
           </>
         ) : (
